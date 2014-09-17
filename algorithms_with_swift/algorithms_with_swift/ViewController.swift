@@ -8,42 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-                            
+// visualize the object structure and inheritance for Swift App Instructions...
+
+// THE CLASS...
+// PROTOCOLS...
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    // double method name?
+    // ? and !...2
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "ProtoTestCell")
+        cell.textLabel.text = "Row #\(indexPath.row)"
+        cell.detailTextLabel.text = "Subtitle #\(indexPath.row)"
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var randomNumbers = [42, 12, 88, 62]
-        
-        for var i = 0; i < randomNumbers.count; i++ {
-            
-            var nums = randomNumbers
-            
-            var x = nums[i]
-            
-            var j = i
-            
-            while j > 0 && nums[j-1] > x {
-                
-                nums[j] = nums[j-1]
-                
-                j--
-                
-            }
-            
-            nums[j] = x
-            
-            // still ending with 42 a randomNumbers[0]...
-            println(nums)
-            
-        }
-        
     }
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+ 
     }
 
 }

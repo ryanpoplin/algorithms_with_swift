@@ -35,6 +35,7 @@
 		5AAC017819C36D4600D5B8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAC017919C36D4600D5B8E6 /* algorithms_with_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = algorithms_with_swiftTests.swift; sourceTree = "<group>"; };
 		5AAC018319C3907700D5B8E6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../MyPlayground.playground; sourceTree = "<group>"; };
+		5AAC018419CA356D00D5B8E6 /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Math.playground; path = ../Math.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 			children = (
 				5AAC016619C36D4600D5B8E6 /* AppDelegate.swift */,
 				5AAC016819C36D4600D5B8E6 /* ViewController.swift */,
+				5AAC018419CA356D00D5B8E6 /* Math.playground */,
 				5AAC018319C3907700D5B8E6 /* MyPlayground.playground */,
 				5AAC016A19C36D4600D5B8E6 /* Main.storyboard */,
 				5AAC016D19C36D4600D5B8E6 /* Images.xcassets */,
@@ -399,6 +401,7 @@
 				5AAC017F19C36D4600D5B8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AAC018019C36D4600D5B8E6 /* Build configuration list for PBXNativeTarget "algorithms_with_swiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +410,7 @@
 				5AAC018219C36D4600D5B8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

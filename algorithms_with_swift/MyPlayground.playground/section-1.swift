@@ -3,3 +3,6 @@
 import Cocoa
 
 var str = "Hello, playground"
+
+// Use for the Swift Book examples...
+
